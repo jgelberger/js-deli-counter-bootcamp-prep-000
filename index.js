@@ -17,7 +17,7 @@ function nowServing(currentLine) {
 function currentLine(currentLine) {
   if (currentLine.length > 0) {
     var line = {};
-    while (currentLine.length > 0) {
+    for (currentLine.length > 0) {
       
       line[key] = currentLine[0];
       currentLine.shift();
