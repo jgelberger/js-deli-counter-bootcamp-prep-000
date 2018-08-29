@@ -16,12 +16,25 @@ function nowServing(currentLine) {
 
 function currentLine(currentLine) {
   if (currentLine.length > 0) {
-    var line = {};
-    for (currentLine.length > 0) {
-      
-      line[key] = currentLine[0];
-      currentLine.shift();
-    }
+   var string = 'The line is currently:';
+   for (var i = 0; i < currentLine.length; i++) {
+     if (i < currentLine.length -1) {
+     string = `${string} ${i+1}. ${currentLine[i]}
+   }
+   
+   
+   
+   
+   
+   /* var lineArray = [];
+    for (var i = 0; i < currentLine.length; i++) {
+      if (i < currentLine.length -1) {
+        lineArray[i] = `${i + 1}. ${currentLine[i]}, `;
+      } else {
+        lineArray[i] = `${i + 1}. ${currentLine[i]}`;
+      }
+    return   
+    }*/
   } else {
     return 'The line is currently empty.';
   }
